@@ -1,6 +1,6 @@
 # Overview
 This is code for the Supermarket Checkout kata.
-I used it to train unit testing to the team.
+I used it to train unit testing and test-driven development to the team.
 
 # Resources:
  * https://github.com/asierba/Katas.CSharp
