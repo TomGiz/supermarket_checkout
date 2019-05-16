@@ -65,17 +65,19 @@ Short development cycle
 0. Setup
 	* Visual Studio projects
 	* Xunit
-	* each group is given an ordinal number
-	*
+	* each pair is initially given an ordinal number
+	* per pair: 1 driver, 1 navigator
+	* `git init` and small commits
+	* [https://www.gitignore.io/api/visualstudio](https://www.gitignore.io/api/visualstudio)
 
  1. Start
 
     * In our supermarket, we need to calculate the total price of all items that are scanned at checkout.
     * Products are identified by a SKU (Stock Keeping Unit).
     * For sake of simplicity, we will use letter (A, B...) as SKU's.
-    * per pair: 1 driver, 1 navigator
     * For the time being, only two products in stock: A & B
     * Multiple items of the same product can be scanned and they can arrive in any order.
+    * Focus on little else than the requirements
     * Prices
 
 |Item	| Unit  Price	      |    
@@ -91,6 +93,7 @@ Short development cycle
 
 2. New products
 
+    * at 100 % code coverage? how many tests/test cases do you have?
     * switch roles (driver, navigator)
 	
 
@@ -105,6 +108,8 @@ Short development cycle
 3. Discounts
 
 	* each navigator goes to the next group and becomes driver there
+    	* new driver: what concepts from the assignment are in the code? SKU, product, total vs. unit price?
+	* primitive obsession? is Money/Currency a concept in the code? good/bad?
 	* the new navigator wil have to guide the new driver through the code #knowledgesharing
 	* introducing discounts
 
@@ -115,10 +120,19 @@ Short development cycle
 |  B  |   30          |  2 for 45    | 
 |  C  |   20          |      |
 |  D  |   15          |      | 
+|  E  |    1          |      | 
 
 4. More changing requirements
+    * product E costs 10 a piece, but one item of E is free per each 10 items of D
+    * the goverment stopped producing coins of of 1 and 2; every bill/invoice has to be rounded to the nearest multiple of 5, even if paid with debet/credit card
+    * can property based testing help? Total price should always be non-negative! Else we don't reimburse any returned item!
     * team members think of interesting changes
 	* entire group votes on next change request to implement
 
 5. What's next?
 	* democracy!
+	
+
+When finished, discuss about what happened well and what went wrong, what you can all learn and take home from this session.
+
+
