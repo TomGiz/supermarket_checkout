@@ -65,12 +65,17 @@ Short development cycle
 0. Setup
 	* Visual Studio projects
 	* Xunit
+	* each group is given an ordinal number
+	*
 
  1. Start
 
-    * Products are identified by a SKU (Stock Keeping Unit)
-    * We will use letter (A, B...) as SKU's
+    * In our supermarket, we need to calculate the total price of all items that are scanned at checkout.
+    * Products are identified by a SKU (Stock Keeping Unit).
+    * For sake of simplicity, we will use letter (A, B...) as SKU's.
     * per pair: 1 driver, 1 navigator
+    * For the time being, only two products in stock: A & B
+    * Multiple items of the same product can be scanned and they can arrive in any order.
     * Prices
 
 |Item	| Unit  Price	      |    
@@ -100,6 +105,7 @@ Short development cycle
 3. Discounts
 
 	* each navigator goes to the next group and becomes driver there
+	* the new navigator wil have to guide the new driver through the code #knowledgesharing
 	* introducing discounts
 
 
@@ -112,7 +118,7 @@ Short development cycle
 
 4. More changing requirements
     * team members think of interesting changes
-	* entire team votes on next change request to implement
+	* entire group votes on next change request to implement
 
 5. What's next?
 	* democracy!
