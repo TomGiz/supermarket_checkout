@@ -107,6 +107,7 @@ Short development cycle
 
 3. Discounts
 
+	* What do you do when an item has an unknown SKU?
 	* each navigator goes to the next group and becomes driver there
     	* new driver: what concepts from the assignment are in the code? SKU, product, total vs. unit price?
 	* primitive obsession? is Money/Currency a concept in the code? good/bad?
@@ -123,7 +124,7 @@ Short development cycle
 |  E  |    1          |      | 
 
 4. More changing requirements
-    * product E costs 10 a piece, but one item of E is free per each 10 items of D
+    * product E costs 1 a piece, but one item of E is free per each 10 items of D
     * the goverment stopped producing coins of of 1 and 2; every bill/invoice has to be rounded to the nearest multiple of 5, even if paid with debet/credit card
     * can property based testing help? Total price should always be non-negative! Else we don't reimburse any returned item!
     * team members think of interesting changes
